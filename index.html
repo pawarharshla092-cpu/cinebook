@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CineBook | Movie Tickets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span>◆</span>CineBook</a>
+    <nav><a class="active" href="index.html">Movies</a><a href="#how-it-works">How it works</a><a href="confirmation.html?bookings=1">My bookings</a></nav>
+    <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">YOUR SEAT. YOUR STORY.</p>
+        <h1>The magic starts<br><em>before</em> the movie.</h1>
+        <p class="hero-copy">Choose a film, reserve your favourite seats, and enjoy the show.</p>
+        <a class="button" href="#movies">Explore movies <span>→</span>
+        </a>
+      </div>
+      <div class="hero-art">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="feature-poster">
+      <span class="poster-mark">✦</span>
+      <small>NOW SHOWING</small>
+      <strong>NEON<br>HORIZON</strong>
+      <i>SCI-FI · 2H 08M</i>
+    </div>
+  </div>
+    </section>
+    <section id="movies" class="movies-section">
+      <div class="section-title"><div>
+        <p class="eyebrow">IN CINEMAS NOW</p>
+        <h2>Find your next favourite</h2>
+      </div>
+      <div class="filters">
+        <label class="search"><span>⌕</span>
+          <input id="search" placeholder="Search a movie">
+        </label>
+        <select id="genre-filter">
+          <option value="All">All genres</option>
+        </select>
+      </div>
+    </div>
+      <div id="movie-grid" class="movie-grid"></div>
+      <p id="empty-state" class="empty hidden">No films match your search.</p>
+    </section>
+    <section id="how-it-works" class="how">
+      <p class="eyebrow">SIMPLE BOOKING</p>
+      <h2>From screen to seat in minutes</h2>
+      <div class="steps">
+        <article>
+          <b>01</b>
+          <h3>Pick a film</h3>
+          <p>Browse new releases and find a story you want to see.</p>
+        </article>
+        <article>
+        <b>02</b>
+        <h3>Choose a show</h3>
+        <p>Select a theatre, date, and time that suits you.</p>
+      </article>
+      <article>
+      <b>03</b>
+      <h3>Reserve your seats</h3>
+      <p>Choose your perfect spot and receive your ticket instantly.</p>
+    </article>
+  </div>
+</section>
+  </main>
+  <footer>© 2026 CineBook · A demo movie ticketing experience</footer>
+  <script src="js/data.js"></script><script src="js/home.js"></script>
+</body>
+</html>

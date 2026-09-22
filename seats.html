@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CineBook | Choose seats</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css"></head>
+        <body>
+            <header class="site-header"><a class="logo" href="index.html">
+                <span>◆</span>CineBook</a>
+                <nav>
+                    <a href="index.html">Movies</a>
+                    <a class="active" href="#">Choose seats</a>
+                </nav>
+                <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+            </header>
+            <main class="seat-page">
+                <a class="back" href="movie.html">← Back to showtimes</a>
+                <div class="booking-layout">
+                    <section>
+                        <p class="eyebrow">CHOOSE YOUR SEATS</p>
+                    <h1 id="seat-title">Your cinema</h1><p id="show-info" class="muted"></p>
+                    <div class="screen">SCREEN</div>
+                    <div id="seat-map" class="seat-map" aria-label="Cinema seat map"></div>
+                    <div class="legend">
+                    <span>
+                    <i class="seat"></i>Available</span>
+                    <span>
+                    <i class="seat selected"></i>Selected</span>
+                    <span>
+                    <i class="seat occupied"></i>Booked</span>
+                </div>
+            </section>
+            <aside class="summary-card">
+            <p class="eyebrow">BOOKING SUMMARY</p>
+        <div id="summary-movie"></div>
+        <hr>
+        <p class="summary-row">
+        <span>Seats</span>
+        <strong id="selected-seats">None</strong></p>
+        <p class="summary-row">
+        <span>Tickets</span>
+        <strong id="ticket-count">0</strong></p>
+        <p class="total"><span>Total</span>
+        <strong id="total-price">₹0</strong></p>
+        <button id="continue-btn" class="button wide" disabled>Continue to checkout →</button>
+    </aside>
+</div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/seats.js"></script>
+</body>
+</html>

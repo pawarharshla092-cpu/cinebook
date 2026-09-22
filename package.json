@@ -1,0 +1,21 @@
+{
+  "name": "cinebook",
+  "version": "1.0.0",
+  "description": "An interactive front-end movie ticket booking website created with HTML, CSS, and JavaScript.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node seed.js",
+    "test": "echo \"No automated tests yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.1"
+  }
+}
